@@ -12,15 +12,21 @@ if test "$DISABLE_COLOR" = true; then
 fi
 
 
+bindkey  '^P' history-substring-search-up
+bindkey  '^N' history-substring-search-down
 # Bind terminal-specific up and down keys
 # Bind in both emacs and vi modes so it works in both, and is not
 # sensitive to whether this is loaded before or after the vi-mode plugin
 if [[ -n "$terminfo[kcuu1]" ]]; then
   bindkey -M emacs "$terminfo[kcuu1]" history-substring-search-up
+  bindkey -M emacs "^P" history-substring-search-up
+  bindkey -M vicmd "k" history-substring-search-up
   bindkey -M viins "$terminfo[kcuu1]" history-substring-search-up
 fi
 if [[ -n "$terminfo[kcud1]" ]]; then
   bindkey -M emacs "$terminfo[kcud1]" history-substring-search-down
+  bindkey -M emacs "^N" history-substring-search-down
+  bindkey -M vicmd "j" history-substring-search-down
   bindkey -M viins "$terminfo[kcud1]" history-substring-search-down
 fi
 
