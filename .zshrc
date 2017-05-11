@@ -11,7 +11,8 @@ export PATH=$PATH:$GEM_HOME/bin
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="random"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -21,7 +22,7 @@ ZSH_THEME="random"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -55,7 +56,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux systemd command-not-found extract vi-mode history history-substring-search tmux tmuxinator autojump fasd)
+plugins=(git command-not-found extract vi-mode history history-substring-search tmux tmuxinator autojump fasd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,4 +87,5 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cdgit="cd ~/Documents/dev/kingdom-of-heaven-client/"
+alias syncccs="/Users/yubin/Downloads/gitChangeCopy /Users/yubin/Documents/dev/KOHCSSProject /Users/yubin/Documents/dev/kingdom-of-heaven-client"
