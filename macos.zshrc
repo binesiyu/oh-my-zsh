@@ -7,7 +7,10 @@ GEM_PATH=$GEM_HOME
 export PATH=$PATH:$GEM_HOME/bin
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/${HOME}/.oh-my-zsh
+## zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+export ZSH=/${HOME}/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -56,7 +59,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx git command-not-found extract vi-mode history history-substring-search tmux tmuxinator autojump fasd thefuck)
+plugins=(git command-not-found extract vi-mode history history-substring-search tmux tmuxinator autojump fasd thefuck common-aliases)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -69,11 +72,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+  # export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+  # export EDITOR='mvim'
 # fi
 
+export EDITOR='vim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -89,3 +93,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 alias cdgit="cd ~/Documents/dev/kingdom-of-heaven-client/"
 alias syncccs="/Users/yubin/Downloads/gitChangeCopy /Users/yubin/Documents/dev/KOHCSSProject /Users/yubin/Documents/dev/kingdom-of-heaven-client"
+export ANDROID_NDK_ROOT=/Users/yubin/Documents/work/android-ndk-r10d
