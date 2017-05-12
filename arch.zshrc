@@ -11,7 +11,7 @@ export PATH=$PATH:$GEM_HOME/bin
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="random"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -55,7 +55,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux systemd command-not-found extract vi-mode history history-substring-search tmux tmuxinator autojump fasd)
+plugins=(common-aliases git archlinux systemd command-not-found extract vi-mode history history-substring-search tmux tmuxinator autojump fasd thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,6 +65,8 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+
+export EDITOR='vim'
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
