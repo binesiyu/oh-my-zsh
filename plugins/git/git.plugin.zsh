@@ -239,3 +239,6 @@ alias glum='git pull upstream master'
 
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
+alias gpl='git pull && git push'
+alias gac='git add -u && git commit -m'
+alias gaac='git add --all && git commit -m'

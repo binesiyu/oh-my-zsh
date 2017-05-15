@@ -59,7 +59,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git command-not-found extract vi-mode history history-substring-search tmux tmuxinator autojump fasd thefuck common-aliases)
+plugins=(jump git command-not-found extract history history-substring-search tmux fasd thefuck common-aliases)
 
 source $ZSH/oh-my-zsh.sh
 
