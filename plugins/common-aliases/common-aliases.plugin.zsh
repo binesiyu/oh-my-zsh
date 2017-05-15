@@ -20,6 +20,8 @@ alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 
 alias t='tail -f'
 
+alias v='vim'
+
 # Command line head / tail shortcuts
 alias -g H='| head'
 alias -g T='| tail'
