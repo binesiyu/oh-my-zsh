@@ -55,4 +55,4 @@ _mark_expansion() {
 }
 zle -N _mark_expansion
 bindkey "^g" _mark_expansion
-alias jp='jump'
+alias j='jump'
