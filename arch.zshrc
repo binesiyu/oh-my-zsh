@@ -55,7 +55,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(common-aliases git archlinux systemd command-not-found extract vi-mode history history-substring-search tmux tmuxinator autojump fasd thefuck)
+plugins=(common-aliases git archlinux systemd command-not-found extract history history-substring-search tmux autojump fasd thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
