@@ -2,9 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #Setting the GEM_PATH and GEM_HOME variables may not be necessary, check 'gem env' output to verify whether both variables already exist 
-GEM_HOME=$(ls -t -U | ruby -e 'puts Gem.user_dir')
-GEM_PATH=$GEM_HOME
-export PATH=$PATH:$GEM_HOME/bin
+# GEM_HOME=$(ls -t -U | ruby -e 'puts Gem.user_dir')
+# GEM_PATH=$GEM_HOME
+# export PATH=$PATH:$GEM_HOME/bin
 
 # Path to your oh-my-zsh installation.
   export ZSH=/${HOME}/.oh-my-zsh
