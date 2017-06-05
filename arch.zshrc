@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH
 
 #Setting the GEM_PATH and GEM_HOME variables may not be necessary, check 'gem env' output to verify whether both variables already exist 
 # GEM_HOME=$(ls -t -U | ruby -e 'puts Gem.user_dir')
