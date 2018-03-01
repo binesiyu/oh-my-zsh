@@ -25,7 +25,7 @@ ZSH_THEME="agnoster"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -59,7 +59,18 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(jump git command-not-found extract history history-substring-search tmux fasd thefuck common-aliases)
+plugins=(
+    jump 
+    git 
+    command-not-found 
+    extract 
+    history 
+    history-substring-search 
+    tmux 
+    fasd 
+    thefuck 
+    common-aliases
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -72,9 +83,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-  # export EDITOR='vim'
+#   export EDITOR='vim'
 # else
-  # export EDITOR='mvim'
+#   export EDITOR='mvim'
 # fi
 
 export EDITOR='vim'
