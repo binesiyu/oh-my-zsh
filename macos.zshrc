@@ -70,6 +70,9 @@ plugins=(
     fasd 
     thefuck 
     common-aliases
+    zsh-autosuggestions
+    fzf-widgets
+    fzf-z
 )
 
 source $ZSH/oh-my-zsh.sh
