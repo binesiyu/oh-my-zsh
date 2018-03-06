@@ -65,14 +65,13 @@ plugins=(
     command-not-found 
     extract 
     history 
-    history-substring-search 
     tmux 
     fasd 
     thefuck 
     common-aliases
     zsh-autosuggestions
     fzf-widgets
-    fzf-z
+    fzf-fasd
 )
 
 source $ZSH/oh-my-zsh.sh
