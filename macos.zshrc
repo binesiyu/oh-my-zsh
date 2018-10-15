@@ -123,3 +123,7 @@ export PATH=$LUAROCKS:$PATH
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 export COCOS_TEMPLATES_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+ANDROID_HOME=/Users/yubin/Documents/work/android-sdk-macosx
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
