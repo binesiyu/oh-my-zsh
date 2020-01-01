@@ -66,11 +66,9 @@ plugins=(
     extract 
     history 
     tmux 
-    fasd 
     common-aliases
     zsh-autosuggestions
-    fzf-widgets
-    fzf-fasd
+    fzf
 )
 
 source $ZSH/oh-my-zsh.sh
