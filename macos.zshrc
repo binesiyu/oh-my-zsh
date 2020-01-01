@@ -69,6 +69,7 @@ plugins=(
     common-aliases
     zsh-autosuggestions
     fzf
+    fasd
 )
 
 source $ZSH/oh-my-zsh.sh
