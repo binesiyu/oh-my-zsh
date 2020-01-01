@@ -67,7 +67,6 @@ plugins=(
     history 
     tmux 
     fasd 
-    thefuck 
     common-aliases
     zsh-autosuggestions
     fzf-widgets
@@ -127,3 +126,4 @@ export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 ANDROID_HOME=/Users/yubin/Documents/work/android-sdk-macosx
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
