@@ -1,10 +1,10 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/Library/Haskell/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/opt/node@8/bin:$HOME/bin:$HOME/.local/bin:$HOME/Library/Haskell/bin:/usr/local/bin:$PATH
 
-#Setting the GEM_PATH and GEM_HOME variables may not be necessary, check 'gem env' output to verify whether both variables already exist 
+#Setting the GEM_PATH and GEM_HOME variables may not be necessary, check 'gem env' output to verify whether both variables already exist
 GEM_HOME=$(ls -t -U | ruby -e 'puts Gem.user_dir')
 GEM_PATH=$GEM_HOME
-export PATH=$PATH:$GEM_HOME/bin
+export PATH=$GEM_HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 ## zsh-completions
@@ -60,14 +60,14 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    jump 
-    git 
-    command-not-found 
-    extract 
-    history 
-    tmux 
-    fasd 
-    thefuck 
+    jump
+    git
+    command-not-found
+    extract
+    history
+    tmux
+    fasd
+    thefuck
     common-aliases
     zsh-autosuggestions
     fzf-widgets
@@ -107,8 +107,8 @@ export EDITOR='vim'
 alias cdgit="cd ~/Documents/dev/kingdom-of-heaven-client/"
 alias syncccs="/Users/yubin/Downloads/gitChangeCopy /Users/yubin/Documents/dev/KOHCSSProject /Users/yubin/Documents/dev/kingdom-of-heaven-client"
 alias syncccskoh="/Users/yubin/Downloads/gitChangeCopy /Users/yubin/Documents/dev/KOHCSSProject /Users/yubin/Documents/dev/koh"
-export ANDROID_NDK_ROOT=/Users/yubin/Documents/work/android-ndk-r10d
-export NDK_ROOT=/Users/yubin/Documents/work/android-ndk-r10b
+export ANDROID_NDK_ROOT=/Users/yubin/Documents/work/android-ndk-r20
+export NDK_ROOT=/Users/yubin/Documents/work/android-ndk-r20
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/tools/cocos2d-console/bin
@@ -127,3 +127,14 @@ export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 ANDROID_HOME=/Users/yubin/Documents/work/android-sdk-macosx
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# added by travis gem
+[ -f /Users/yubin/.travis/travis.sh ] && source /Users/yubin/.travis/travis.sh
