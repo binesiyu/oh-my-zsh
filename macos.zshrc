@@ -60,18 +60,16 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    jump
-    git
-    command-not-found
-    extract
-    history
-    tmux
-    fasd
-    thefuck
+    jump 
+    git 
+    command-not-found 
+    extract 
+    history 
+    tmux 
     common-aliases
     zsh-autosuggestions
-    fzf-widgets
-    fzf-fasd
+    fzf
+    fasd
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -138,3 +136,4 @@ export LANG=en_US.UTF-8
 
 # added by travis gem
 [ -f /Users/yubin/.travis/travis.sh ] && source /Users/yubin/.travis/travis.sh
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
