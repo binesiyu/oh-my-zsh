@@ -70,6 +70,7 @@ plugins=(
     zsh-autosuggestions
     fzf
     fasd
+    docker
 )
 
 source $ZSH/oh-my-zsh.sh
