@@ -137,4 +137,5 @@ export LANG=en_US.UTF-8
 
 # added by travis gem
 [ -f /Users/yubin/.travis/travis.sh ] && source /Users/yubin/.travis/travis.sh
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
