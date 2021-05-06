@@ -70,6 +70,7 @@ plugins=(
     zsh-autosuggestions
     fzf
     fasd
+    docker
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -180,3 +181,6 @@ export PATH=$COCOS_X_ROOT:$PATH
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 export COCOS_TEMPLATES_ROOT="/Users/yubin/Documents/cocos2d-x/templates"
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
