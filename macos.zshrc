@@ -1,3 +1,4 @@
+ZSH_DISABLE_COMPFIX="true"
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/opt/node@8/bin:$HOME/bin:$HOME/.local/bin:$HOME/Library/Haskell/bin:/usr/local/bin:$PATH
 
@@ -71,6 +72,7 @@ plugins=(
     fzf
     fasd
     docker
+    stack
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -184,3 +186,16 @@ export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 # export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
+
+# Add environment variable ADXE_ROOT for adxe
+export ADXE_ROOT="/Users/yubin/Documents/dev/adxe"
+export PATH=$ADXE_ROOT:$PATH
+
+# Add environment variable ADXE_CONSOLE_ROOT for adxe
+export ADXE_CONSOLE_ROOT="/Users/yubin/Documents/dev/adxe/tools/console/bin"
+export PATH=$ADXE_CONSOLE_ROOT:$PATH
+
+# Add environment variable ANDROID_SDK for adxe
+export ANDROID_SDK="/Users/yubin/Documents/work/android-sdk-macosx"
+export PATH=$ANDROID_SDK:$PATH
+export PATH=$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH
