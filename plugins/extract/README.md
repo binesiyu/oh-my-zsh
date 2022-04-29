@@ -21,11 +21,16 @@ plugins=(... extract)
 | `apk`             | Android app file                     |
 | `aar`             | Android library file                 |
 | `bz2`             | Bzip2 file                           |
+| `cab`             | Microsoft cabinet archive            |
+| `cpio`            | Cpio archive                         |
 | `deb`             | Debian package                       |
+| `ear`             | Enterprise Application aRchive       |
 | `gz`              | Gzip file                            |
+| `ipa`             | iOS app package                      |
 | `ipsw`            | iOS firmware file                    |
 | `jar`             | Java Archive                         |
 | `lrz`             | LRZ archive                          |
+| `lz4`             | LZ4 archive                          |
 | `lzma`            | LZMA archive                         |
 | `rar`             | WinRAR archive                       |
 | `rpm`             | RPM package                          |
@@ -35,6 +40,7 @@ plugins=(... extract)
 | `tar.gz`          | Tarball with gzip compression        |
 | `tar.lrz`         | Tarball with lrzip compression       |
 | `tar.lz`          | Tarball with lzip compression        |
+| `tar.lz4`         | Tarball with lz4 compression         |
 | `tar.xz`          | Tarball with lzma2 compression       |
 | `tar.zma`         | Tarball with lzma compression        |
 | `tar.zst`         | Tarball with zstd compression        |
