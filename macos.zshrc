@@ -158,7 +158,7 @@ export ANDROID_SDK_ROOT="/Users/yubin/Documents/work/android-sdk-macosx"
 export PATH=$ANDROID_SDK_ROOT:$PATH
 export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 
-alias sultanpull="cd  /Users/yubin/Documents/dev/sultan_art_ci && git pull && cd  /Users/yubin/Documents/dev/sultan_code.git && git pull &&  cd  /Users/yubin/Documents/dev/sultans2 && git pull"
+alias sultanpull="cd  /Users/yubin/Documents/dev/KOH2/KOH_UNITY && git pull && cd  /Users/yubin/Documents/dev/KOH2/KOH_UNITY_CODE && git pull"
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/tools/cocos2d-console/bin
