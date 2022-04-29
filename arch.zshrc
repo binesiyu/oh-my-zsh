@@ -66,10 +66,10 @@ plugins=(
     history
     tmux
     fasd
-    thefuck
-    zsh-autosuggestions
-    fzf-widgets
-    fzf-fasd
+    #thefuck
+    #zsh-autosuggestions
+    #fzf-widgets
+    #fzf-fasd
 )
 
 source $ZSH/oh-my-zsh.sh
