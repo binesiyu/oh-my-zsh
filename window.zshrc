@@ -66,6 +66,7 @@ plugins=(
     tmux
     fasd
     zsh-autosuggestions
+    fzf
     fzf-fasd
 )
 
