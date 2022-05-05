@@ -108,13 +108,13 @@ prompt_git() {
 
    if [[ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]]; then
     repo_path=$(git rev-parse --git-dir 2>/dev/null)
-    # dirty=$(parse_git_dirty)
+    dirty=$(parse_git_dirty)
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git rev-parse --short HEAD 2> /dev/null)"
-    # if [[ -n $dirty ]]; then
-    #   prompt_segment yellow black
-    # else
+    if [[ -n $dirty ]]; then
+      prompt_segment yellow black
+    else
       prompt_segment green $CURRENT_FG
-    # fi
+    fi
 
     if [[ -e "${repo_path}/BISECT_LOG" ]]; then
       mode=" <B>"
@@ -125,18 +125,17 @@ prompt_git() {
     fi
 
     setopt promptsubst
-    # autoload -Uz vcs_info
+    autoload -Uz vcs_info
 
-    # zstyle ':vcs_info:*' enable git
-    # zstyle ':vcs_info:*' get-revision true
-    # zstyle ':vcs_info:*' check-for-changes true
-    # zstyle ':vcs_info:*' stagedstr '✚'
-    # zstyle ':vcs_info:*' unstagedstr '±'
-    # zstyle ':vcs_info:*' formats ' %u%c'
-    # zstyle ':vcs_info:*' actionformats ' %u%c'
-    # vcs_info
-    # echo -n "${${ref:gs/%/%%}/refs\/heads\//$PL_BRANCH_CHAR }${vcs_info_msg_0_%% }${mode}"
-    echo -n "${${ref:gs/%/%%}/refs\/heads\//$PL_BRANCH_CHAR }${mode}"
+    zstyle ':vcs_info:*' enable git
+    zstyle ':vcs_info:*' get-revision true
+    zstyle ':vcs_info:*' check-for-changes true
+    zstyle ':vcs_info:*' stagedstr '✚'
+    zstyle ':vcs_info:*' unstagedstr '±'
+    zstyle ':vcs_info:*' formats ' %u%c'
+    zstyle ':vcs_info:*' actionformats ' %u%c'
+    vcs_info
+    echo -n "${${ref:gs/%/%%}/refs\/heads\//$PL_BRANCH_CHAR }${vcs_info_msg_0_%% }${mode}"
   fi
 }
 
