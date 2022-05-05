@@ -103,3 +103,4 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
+alias sultanpull="cd /d/KOH2/KOH_UNITY && git pull && cd /d/KOH2/KOH_UNITY_RES && git pull && cd /d/KOH2/KOH_UNITY_CODE && git pull"
