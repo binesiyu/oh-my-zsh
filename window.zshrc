@@ -11,7 +11,7 @@ export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnosterEx"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -103,4 +103,4 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
-alias sultanpull="cd /d/KOH2/KOH_UNITY && git pull && cd /d/KOH2/KOH_UNITY_RES && git pull && cd /d/KOH2/KOH_UNITY_CODE && git pull"
+alias sultanpull="cd /mnt/d/KOH2/KOH_UNITY && git pull && cd /mnt/d/KOH2/KOH_UNITY_RES && git pull && cd /mnt/d/KOH2/KOH_UNITY_CODE && git pull"
