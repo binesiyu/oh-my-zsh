@@ -108,6 +108,8 @@ export EDITOR='vim'
 alias cdgit="cd ~/Documents/dev/kingdom-of-heaven-client/"
 alias syncccs="/Users/yubin/Downloads/gitChangeCopy /Users/yubin/Documents/dev/KOHCSSProject /Users/yubin/Documents/dev/kingdom-of-heaven-client"
 alias syncccskoh="/Users/yubin/Downloads/gitChangeCopy /Users/yubin/Documents/dev/KOHCSSProject /Users/yubin/Documents/dev/koh"
+alias pmd="pmset displaysleepnow"
+alias pms="pmset sleepnow"
 export ANDROID_NDK_ROOT=/Users/yubin/Documents/work/android-ndk-r20
 export NDK_ROOT=/Users/yubin/Documents/work/android-ndk-r20
 
@@ -141,9 +143,6 @@ export LANG=en_US.UTF-8
 [ -f /Users/yubin/.travis/travis.sh ] && source /Users/yubin/.travis/travis.sh
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT="/Users/yubin/Documents/cocos2d-x/tools/cocos2d-console/bin"
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 # Add environment variable COCOS_X_ROOT for cocos2d-x
 export COCOS_X_ROOT="/Users/yubin/Documents"
@@ -160,9 +159,6 @@ export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 
 alias sultanpull="cd  /Users/yubin/Documents/dev/KOH2/KOH_UNITY && git pull && cd  /Users/yubin/Documents/dev/KOH2/KOH_UNITY_CODE && git pull"
 
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/tools/cocos2d-console/bin
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 # Add environment variable COCOS_X_ROOT for cocos2d-x
 export COCOS_X_ROOT=/Applications/Cocos/Cocos2d-x
@@ -172,9 +168,6 @@ export PATH=$COCOS_X_ROOT:$PATH
 export COCOS_TEMPLATES_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT="/Users/yubin/Documents/cocos2d-x/tools/cocos2d-console/bin"
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 # Add environment variable COCOS_X_ROOT for cocos2d-x
 export COCOS_X_ROOT="/Users/yubin/Documents"
