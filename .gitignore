@@ -8,3 +8,7 @@ log/
 .exvim.*/
 *.swp
 .DS_Store
+
+# editor configs
+.vscode
+.idea

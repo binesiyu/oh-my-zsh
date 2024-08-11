@@ -22,4 +22,3 @@ if [[ -n "$terminfo[kcud1]" ]]; then
   bindkey -M vicmd "j" history-substring-search-down
   bindkey -M viins "$terminfo[kcud1]" history-substring-search-down
 fi
-
