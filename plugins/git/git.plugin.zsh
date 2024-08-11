@@ -260,7 +260,7 @@ alias gmum='git merge upstream/$(git_main_branch)'
 alias gmtl='git mergetool --no-prompt'
 alias gmtlvim='git mergetool --no-prompt --tool=vimdiff'
 
-alias gl='git pull'
+alias gl='git pull --commit --no-edit'
 alias gpr='git pull --rebase'
 alias gprv='git pull --rebase -v'
 alias gpra='git pull --rebase --autostash'
@@ -405,6 +405,10 @@ alias gk='\gitk --all --branches &!'
 alias gke='\gitk --all $(git log --walk-reflogs --pretty=%h) &!'
 
 unset git_version
+
+alias gpl='git pull --commit --no-edit && git push'
+alias gac='git add -u && git commit -m'
+alias gaac='git add --all && git commit -m'
 
 # Logic for adding warnings on deprecated aliases
 local old_alias new_alias
